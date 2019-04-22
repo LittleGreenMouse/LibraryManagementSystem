@@ -34,7 +34,7 @@ The basic RMI practice
   javac ComputingService.java
   javac RMIClient.java
   ```
-- run it add you will see an output 11
+- run it and you will see an output 11
   ``` java
   java RMIClient
   ```
