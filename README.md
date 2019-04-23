@@ -38,6 +38,7 @@ The basic RMI practice
   ``` java
   java RMIClient
   ```
+**Note: if you want to run it in a project, please give the two interface file (server and client) a same package name, or you will get an error: no security manager: RMI class loader disabled**
 
 ---
 
