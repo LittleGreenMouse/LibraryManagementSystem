@@ -1,3 +1,5 @@
+package service;
+
 public class Book {
 
     // ISBN of book
@@ -43,3 +45,4 @@ public class Book {
         return author;
     }
 }
+

@@ -4,6 +4,9 @@ import java.rmi.registry.LocateRegistry;
 import java.rmi.registry.Registry;
 import java.rmi.server.UnicastRemoteObject;
 
+import service.LibraryService;
+import service.LibraryServiceImpl;
+
 public class LibraryServer {
 
     public static void main(String[] args) {
