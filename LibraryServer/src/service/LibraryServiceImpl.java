@@ -23,10 +23,6 @@ public class LibraryServiceImpl implements LibraryService {
      */
     private TreeMap<Integer, Book> bookList;
     /**
-     * Library size
-     */
-    private int librarySize;
-    /**
      * Local file's in stream and out stream
      */
     private FileInputStream inStream;
@@ -47,14 +43,12 @@ public class LibraryServiceImpl implements LibraryService {
             in = new BufferedReader(new InputStreamReader(inStream));
 
             bookList = new TreeMap<>();
-            librarySize = 0;
 
             String str;
             while ((str = in.readLine()) != null) {
                 String[] buff = str.split(",");
                 Book book = new Book(buff[1], buff[2], buff[3]);
                 bookList.put(Integer.parseInt(buff[0]), book);
-                librarySize++;
             }
         } catch (IOException e) {
             System.out.println("IO: " + e);
@@ -71,7 +65,7 @@ public class LibraryServiceImpl implements LibraryService {
 
     @Override
     public int getLibrarySize() throws RemoteException {
-        return librarySize;
+        return bookList.size();
     }
 
     @Override

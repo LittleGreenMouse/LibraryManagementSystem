@@ -1,6 +1,8 @@
 package service;
 
-public class Book {
+import java.io.Serializable;
+
+public class Book implements Serializable {
 
     // ISBN of book
     final private String isbn;
