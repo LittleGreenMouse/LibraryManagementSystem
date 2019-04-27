@@ -94,8 +94,8 @@ A traditional client/server mode library.
   ```
 
 
-[1]: http://image.littlegreenmouse.cn/LibraryServer/homepage.jpg
-[2]: http://image.littlegreenmouse.cn/LibraryServer/Addpage.gif
-[3]: http://image.littlegreenmouse.cn/LibraryServer/Deletepage.gif
-[4]: http://image.littlegreenmouse.cn/LibraryServer/SingleResult.gif
-[5]: http://image.littlegreenmouse.cn/LibraryServer/MultipleResult.gif
+[1]: .github/homepage.jpg
+[2]: .github/Addpage.gif
+[3]: .github/Deletepage.gif
+[4]: .github/SingleResult.gif
+[5]: .github/MultipleResult.gif
