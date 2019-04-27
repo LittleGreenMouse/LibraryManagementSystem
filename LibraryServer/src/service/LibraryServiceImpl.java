@@ -38,7 +38,7 @@ public class LibraryServiceImpl implements LibraryService {
         fileName = "library.csv";
         try {
             // To make sure the file exists
-            outStream = new FileOutputStream(fileName);
+            outStream = new FileOutputStream(fileName, true);
             inStream = new FileInputStream(fileName);
             in = new BufferedReader(new InputStreamReader(inStream));
 
