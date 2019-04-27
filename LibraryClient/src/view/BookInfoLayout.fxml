@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="360.0" prefWidth="480.0" style="-fx-background-color: lightgray;" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.BookInfoController">
+    <children>
+        <GridPane alignment="CENTER" gridLinesVisible="true" layoutY="93.0" prefHeight="175.0" prefWidth="480.0" AnchorPane.bottomAnchor="70.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="115.0">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="395.0" minWidth="10.0" prefWidth="182.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="566.0" minWidth="10.0" prefWidth="298.0" />
+            </columnConstraints>
+            <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            </rowConstraints>
+            <children>
+                <Text boundsType="LOGICAL_VERTICAL_CENTER" layoutX="10.0" layoutY="85.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ID" textAlignment="CENTER" wrappingWidth="182.240234375">
+                    <font>
+                        <Font name="System Bold" size="24.0" />
+                    </font>
+                </Text>
+                <Text boundsType="LOGICAL_VERTICAL_CENTER" strokeType="OUTSIDE" strokeWidth="0.0" text="ISBN" textAlignment="CENTER" wrappingWidth="182.240234375" GridPane.rowIndex="1">
+                    <font>
+                        <Font name="System Bold" size="24.0" />
+                    </font>
+                </Text>
+                <Text boundsType="LOGICAL_VERTICAL_CENTER" strokeType="OUTSIDE" strokeWidth="0.0" text="书名" textAlignment="CENTER" wrappingWidth="182.240234375" GridPane.rowIndex="2">
+                    <font>
+                        <Font name="System Bold" size="24.0" />
+                    </font>
+                </Text>
+                <Text boundsType="LOGICAL_VERTICAL_CENTER" strokeType="OUTSIDE" strokeWidth="0.0" text="作者" textAlignment="CENTER" wrappingWidth="182.240234375" GridPane.rowIndex="3">
+                    <font>
+                        <Font name="System Bold" size="24.0" />
+                    </font>
+                </Text>
+                <TextField fx:id="id" editable="false" layoutX="192.0" layoutY="52.0" prefHeight="57.0" prefWidth="298.0" promptText="书目的ID" GridPane.columnIndex="1">
+                    <font>
+                        <Font size="24.0" />
+                    </font>
+                </TextField>
+                <TextField fx:id="isbn" editable="false" prefHeight="57.0" prefWidth="298.0" promptText="书目的ISBN码" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                    <font>
+                        <Font size="24.0" />
+                    </font>
+                </TextField>
+                <TextField fx:id="name" editable="false" prefHeight="57.0" prefWidth="298.0" promptText="书目的名字" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                    <font>
+                        <Font size="24.0" />
+                    </font>
+                </TextField>
+                <TextField fx:id="author" editable="false" prefHeight="57.0" prefWidth="298.0" promptText="书目的作者姓名" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                    <font>
+                        <Font size="24.0" />
+                    </font>
+                </TextField>
+            </children>
+        </GridPane>
+
+        <Text layoutX="144.0" layoutY="72.0" strokeType="OUTSIDE" strokeWidth="0.0" text="书目信息" textAlignment="CENTER" AnchorPane.bottomAnchor="275.7890625" AnchorPane.leftAnchor="144.0" AnchorPane.rightAnchor="144.0" AnchorPane.topAnchor="23.25">
+            <font>
+                <Font name="System Bold" size="48.0" />
+            </font>
+        </Text>
+    </children>
+</AnchorPane>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="360.0" prefWidth="480.0" style="-fx-background-color: lightgray;" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.BookListController">
+   <children>
+       <TableView fx:id="bookTable" layoutX="49.0" prefHeight="360.0" prefWidth="480.0" style="-fx-background-color: lightgray;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+           <columns>
+               <TableColumn fx:id="id" editable="false" maxWidth="48.0" minWidth="48.0" prefWidth="48.0" text="ID" />
+               <TableColumn fx:id="isbn" editable="false" maxWidth="168.0" minWidth="168.0" prefWidth="168.0" text="ISBN" />
+               <TableColumn fx:id="name" editable="false" maxWidth="168.0" minWidth="168.0" prefWidth="168.0" text="书名" />
+               <TableColumn fx:id="author" editable="false" maxWidth="96.0" minWidth="96.0" prefWidth="96.0" text="作者" />
+           </columns>
+       </TableView>
+   </children>
+</AnchorPane>
